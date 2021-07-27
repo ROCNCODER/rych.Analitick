@@ -15,41 +15,35 @@
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
 <body>
-	<!--Часть кода отчечающая за подключение библиотеки GA-->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-202695355-1"></script>
+
+<!-- Google Tag Manager -->
+	
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-// Внимание на часть, кода с параметром custom_map, подключили карту кастомных параметров 
-  gtag('config', 'UA-202695355-1' , {
-  'custom_map': {
-    'dimension1': 'clientId'
- //СчесчикИндекс:Название параметра
-  }
-  });
+	
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N7MVVSK');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N7MVVSK');
+	
 </script>
-<!--Подключаем яндекс метрику -->
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(83233945, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true,
-        trackHash:true,
-        ecommerce:"dataLayer"
-   });
-</script>
-
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/83233945" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+	
+<!-- End Google Tag Manager -->
+	
+<!-- Google Tag Manager (noscript) -->
+	
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7MVVSK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+<!-- End Google Tag Manager (noscript) -->		
+	
 <div class="content">
 	<div ><img src="img\WhatsApp Image 2021-07-16 at 12.07.25.jpeg"  class="logo" alt=""  width="950px" ;
 		height="400px"></div>
@@ -71,62 +65,6 @@
 
 	</div>
 </div>
-<script>
 
-//Эта часть кода предназначена для отправки clientId. 
-//Внимание на action_value- Это название выполняемого действия 
-gtag('event', 'action_value' , {'clientId': function id()
-//1.Логические функции в куке. Результат, которых будет записан в var match, нужна что бы получить GA1.3.204072228.1626852763 
-{
-    var match = document.cookie.match('(?:^|;)\\s*_ga=([^;]*)');
-// 2. Часть кода представленная ниже кода, посредством функций и логических операций с плавающий точкой, делит это число и забирает 204072228.1626852763  
-    var raw = (match) ? decodeURIComponent(match[1]) : null;
-if (raw)
-{
-match = raw.match(/(\d+\.\d+)$/);
-}
-var gacid = (match) ? match[1] : null;
-if (gacid)
-{
-    return gacid;  // 3. Данное число является результатом, и должно быть отправлено Google A 
-}
-}
-});
-</script>
-<script>
-//Код счетчика ,Название дествия ,функция получения clientID
-	ym(83233945, 'getClientID', function(clientID) {
- ym(83233945, 'userParams', {              //userParams Отвечает за передачу параметра пользователя             
-    ymcid: clientID
-});
-});
-</script>
-<script>// Данный скрипт регистрирует прогресс покупки товара 
-gtag('event', 'checkout_progress', {
-  "items": [
-       {
-      "id": "S111",
-      "name": "HQD Cuvie Plus",
-      "brand": "HQD",
-      "category": "Electronic Vaporizer",
-      "variant": "Black",
-      "list_position": 1,
-      "quantity": 3,
-      "price": 383
-    },
-	   {
-   "id": "S112",
-      "name": "HQD MEGA",
-      "brand": "HQD",
-      "category": "Electronic Vaporizer",
-      "variant": "Red",
-      "list_position": 2,
-      "quantity": 3,
-      "price": 743
-    }
-  ],
-  "coupon": "SUMMER_DISCOUNT"
-});
-</script>
 </body>
 </html>
