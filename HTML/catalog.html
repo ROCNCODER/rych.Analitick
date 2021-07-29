@@ -87,10 +87,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</div>
 </div>
 <script>	
-dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
-dataLayer.push({
+(dataLayer = window.dataLayer || []).push({
   'ecommerce': {
-    'currencyCode': 'EUR',                       // Local currency is optional.
+    'currencyCode': 'RU',                       // Local currency is optional.
     'impressions': [
      {
           'id': 'S111', // ID товара или артикул
