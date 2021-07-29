@@ -55,7 +55,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="content">
 <div class="p404"> 404 </div>
 	</div>
-
+	
+<script>
+(dataLayer = window.dataLayer || []).push({
+'eCategory': '404Error', 
+'eAction': location.href,
+'eLabel': document.referrer||'no-referrer',
+'eNI': true,
+'event': 'GAEvent'
+});
+</script>	
 	
 
 
