@@ -70,7 +70,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <img src="../img\8.jpg" alt="" class="">
         <div class="pop">HQD SUPER, Черника-малина-виноград  Одноразовая электронная сигарета HQD Super, в индивидуальной упаковке, включение происходит при затяжке. После употребления необходимо сдавать в пункт приема батареек.</div>
         </div>
-        <a href="corzina.html"> <button class="pocupca id">Добавить в корзину</button></a>
+        <a href="corzina.html" onclick="Click()"Добавить в корзину</button></a>
         <div class="img-siga">
             <img src="../img\9.jpg" alt="" class="">
             <div class="pop">HQD SUPER, Яблочный персик  Одноразовая электронная сигарета HQD Super, в индивидуальной упаковке, включение происходит при затяжке. После употребления необходимо сдавать в пункт приема батареек.</div>
@@ -111,6 +111,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		
 });
 
+function Click(){
+
+	(dataLayer = window.dataLayer || []).push({
+  'ecommerce': {
+    'add': {
+      'products': [{
+          'id': 'S113', // ID товара или артикул
+          'name': 'HQD SUPER',  // Название товара
+          'price': '430.00', // Цена в формате '9.99'  
+          'category': 'Electronic Vaporizer', // Категория товара, до 5 уровней вложенности через "/"
+	   'brand': 'HQD', // Цена в формате '9.99   
+	  'variant': 'манго-гуава', 
+          'quantity': 2 // количество товара в корзине   
+	    
+
+                  }]
+    }
+  },
+  'eCategory': 'eEC',
+  'eAction': 'cartAdd',
+  'eLabel': '',
+  'eNI': false,
+  'event': 'GAEventEC'	    
+	
+});
+}
 
 	
 </script>
