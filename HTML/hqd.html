@@ -103,10 +103,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   'event': 'GAEventEC'
 });
 	
-	window.onload = function () {
-var a = document.getElementById('cart');
- a.onclick = function() {
 
+
+window.onload = function () {
+
+    //получаем идентификатор элемента
+	
+    var a = document.getElementById('cart');
+    
+    //вешаем на него событие
+	
+    a.onclick = function() {
+	    
+     //производим какие-то действия
 	(dataLayer = window.dataLayer || []).push({
   'ecommerce': {
     'add': {
@@ -127,11 +136,9 @@ var a = document.getElementById('cart');
   'eAction': 'cartAdd',
   'eLabel': '',
   'eNI': false,
-  'event': 'GAEventEC'
-  }
-  }
-});
+  'event': 'GAEventEC'	    
 
+});
 	
 	
 	
