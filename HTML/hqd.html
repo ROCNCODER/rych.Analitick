@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <img src="../img\1.png" alt="" class="">
             <div class="pop">HQD CUVIE PLUS, Манго-гуава  Одноразовая электронная сигарета HQD Super, в индивидуальной упаковке, включение происходит при затяжке. После употребления необходимо сдавать в пункт приема батареек.</div>
             </div>
-        <a href="corzina.html" onclick="Click()"   class="pocupca id">Добавить в корзину</button></a>
+        <a href="corzina.html" onclick="Click()" ; return !ga.loaded; class="pocupca id">Добавить в корзину</button></a>
         <div class="img-siga">
             <img src="../img\2.png" alt="" class="">
             <div class="pop">HQD CUVIE PLUS, Черника-малина  Одноразовая электронная сигарета HQD Super, в индивидуальной упаковке, включение происходит при затяжке. После употребления необходимо сдавать в пункт приема батареек.</div>
@@ -106,35 +106,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>	
 <script>	
 
-function Click(){
 
+	
+
+function  Click()  {
+	setTimeout (function() { document.location = "/cart.html" }, 1000);
 	(dataLayer = window.dataLayer || []).push({
-  'ecommerce': {
-    'add': {
-      'products': [{
-          'id': 'S113', // ID товара или артикул
+	  'ecommerce': {
+		'add': {
+		  'products': [{
+			   'id': 'S113', // ID товара или артикул
           'name': 'HQD SUPER',  // Название товара
           'price': '430.00', // Цена в формате '9.99'  
           'category': 'Electronic Vaporizer', // Категория товара, до 5 уровней вложенности через "/"
 	   'brand': 'HQD', // Цена в формате '9.99   
 	  'variant': 'манго-гуава', 
-          'quantity': 2 // количество товара в корзине   
-	    
-
-                  }]
-    }
-  },
-  'eCategory': 'eEC',
-  'eAction': 'cartAdd',
-  'eLabel': '',
-  'eNI': false,
-
-
-  'event': 'GAEventEC'	
- 
-});
-}	
-	
+          'quantity': 2 // количество товара в корзине   		
+			 }]
+		}
+	  },
+	  'eCategory': 'eEC',
+	  'eAction': 'cartAdd',
+	  'eLabel': '',
+	  'eNI': false,
+	  'event': 'GAEventEC',
+	  'eventCallback': function() {
+	   document.location = "/cart.html"
+	   }
+	});
+}
 	
 </script>
 </body>
