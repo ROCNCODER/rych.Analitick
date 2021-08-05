@@ -89,8 +89,11 @@ function txt(){
 'event': 'GAEvent'
 });
 }
-	function txt_2(){
-Host: www.google-analytics.com?v=1&t=event&tid=UA-202695355-1&cid=726009514.1628147572&ec=event&ea=document.getElementById(%22txt%22).value&ni=false
+</script>
+
+<script>
+	function txt_2() {
+POST /collect HTTP/1.1/Host: www.google-analytics.com?v=1&t=event&tid=UA-202695355-1&cid=726009514.1628147572&ec=event&ea=document.getElementById(%22txt%22).value&ni=false
 }
 </script>
 </body>
