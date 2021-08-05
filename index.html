@@ -70,7 +70,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<input type="text" value="" id="txt" >
 			
 			<input type="button" value="Отправка события GTM dataLayer" onclick="txt()">
-			<input type="button" value="Отправка события через MP"  >
+			<input type="button" value="Отправка события через MP"  onclick="txt_2()">
 			</div>
 			<br>
 			<input type="button" value="Отправка события электроной торговли ">
@@ -88,6 +88,9 @@ function txt(){
 'eNI': false,
 'event': 'GAEvent'
 });
+}
+	function txt_2(){
+Host: www.google-analytics.com?v=1&t=event&tid=UA-202695355-1&cid=726009514.1628147572&ec=event&ea=document.getElementById(%22txt%22).value&ni=false
 }
 </script>
 </body>
