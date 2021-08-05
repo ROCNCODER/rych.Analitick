@@ -84,10 +84,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script > 
 function txt(){
 (dataLayer = window.dataLayer || []).push({
-'eCategory': "event", 
-'eAction':document.getElementById("txt").value ,
+'eCategory': "BirthYear", 
+'eAction': "getBirthYear",
 'eLabel': "",
 'eNI': false,
+'Birth':['2', document.getElementById("txt").value],
 'event': 'GAEvent'
 });
 }
