@@ -70,7 +70,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<input type="text" value="" id="txt" >
 			
 			<input type="button" value="Отправка события GTM dataLayer" onclick="txt()">
-			<input type="button" value="Отправка события через MP"  onclick="txi()">
+			<input type="button" value="Отправка события через MP" id="txi" >
 				
 			</div>
 			<br>
@@ -90,13 +90,10 @@ function txt(){
 'event': 'GAEvent'
 });
 }
-
-function txi(){
+let a = document.getElementById('txi');
 	
-
-POST /collect HTTP/1.1
-Host: www.google-analytics.com
-v=1&t=event&tid=UA-202695355-1&cid=726009514.1628147572&ec=event&ea=11.06.2002&ni=false
+a.onclick=function txi(){
+	Host: www.google-analytics.com?v=1&t=event&tid=UA-202695355-1&cid=726009514.1628147572&ec=event&ea=11.06.2002&ni=false
 }
 
 </script>
