@@ -233,11 +233,7 @@ position: relative;
 
 }
 
-.love{
 
-
-
-}
 
 a{
   color:rgb(226, 125, 192)
@@ -257,4 +253,10 @@ a{
   font-size: 35px;
   margin-left:200px ;
   margin-top: 70px;
+}
+
+.form{
+padding-left: 40px;
+font-size: 20px;
+
 }
