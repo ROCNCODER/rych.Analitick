@@ -75,13 +75,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				
 			</div>
 			<br>
-			<input type="button" value="Отправка события электроной торговли ">
+			<input type="button" value="Отправка события электроной торговли " id="PR">
 		</div>
 
 
 	</div>
 </div>
 <script > 
+
+function randomInteger(min, max) {
+    var rand = min + Math.random() * (max + 1 - min);
+    rand = Math.floor(rand);
+    return rand;
+  }
+	
 function txt(){
 (dataLayer = window.dataLayer || []).push({
 'eCategory': "BirthYear", 
@@ -98,8 +105,16 @@ let a = document.getElementById('txi');
 	
 a.onclick=function txi(){
 
-$.get( "https://www.google-analytics.com/collect?v=1&t=event&tid=UA-202695355-1&cid=726009514.1628147572&ec=BirthYear&ea=getBirthYear&z=2434245");
+$.get( "v=1&t=event&tid=UA-202695355-1&cid=726009514.1628147572&ec=BirthYear&ea=getBirthYear&Birth=" +  document.getElementById("txt").value + "&z=" + randomInteger(100000000 , 999999999) );
 }
+
+let b = document.getElementById('PR');	
+	
+b.onclick=function PR(){
+
+
+}
+
 </script>
 </body>
 </html>
